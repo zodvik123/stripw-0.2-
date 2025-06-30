@@ -202,7 +202,7 @@ def check_card(ccx):
             "response": str(e)
         }
 
-@app.route('/stripe0.2/key=<key>/cc=<cc>')
+@app.route('/key=<key>/cc=<cc>')
 def process_cc(key, cc):
     if key != "void":
         response_data = {
